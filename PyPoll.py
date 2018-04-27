@@ -39,19 +39,19 @@ with open('election_data_2.csv','r') as csvfile:            #open csv file with 
     print("-------------------------")
 
 
-    #resultsfile = "output.txt"                             #output file path
+    resultsfile = "output.txt"                             #output file path
 
-    #with open(resultsfile,'w') as textfile:                #write results to new file
+    with open(resultsfile,'w') as textfile:                #write results to new file
 
-        #write text to file  ---> Why am I getting an error for the write command?
-        #textfile.write("-------------------------/n")
-        #for candidate in VoteCounter:
-        #    textfile.write(candidate + ":  " + str(VoteCounter[candidate][1]) + "% (" + str(VoteCounter[candidate][0] + "/n")
-        #textfile.write("-------------------------/n")
-        #textfile.write("Winner: " + Winner + "/n")
-        #textfile.write("-------------------------")
+        #write text to file 
+        textfile.write("-------------------------/n")
+        for candidate in VoteCounter:
+           textfile.write(candidate + ":  " + str(VoteCounter[candidate][1]) + "% (" + str(VoteCounter[candidate][0] + "/n")
+        textfile.write("-------------------------/n")
+        textfile.write("Winner: " + Winner + "/n")
+        textfile.write("-------------------------")
     
-    #with open(resultsfile,"r") as textfile:
-        #print(textfile.read())
+    with open(resultsfile,"r") as textfile:
+        print(textfile.read())
 
     
