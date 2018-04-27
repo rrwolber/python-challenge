@@ -1,2 +1,6 @@
 # python-challenge
-Python homework assignment for UCB Data Analytics Bootcamp
+
+Basic demonstration of Python manipulation of text and CSV files.
+
+pyPoll: reads csv of election data and calculates winner, tally stats
+pyText: reads txt file and
