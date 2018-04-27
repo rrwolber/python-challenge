@@ -2,8 +2,6 @@
 
 import csv
 
-#python dictionaries can't have duplicate keys, so I'm assuming that all future datasets will be like these and not have duplicates
-
 
 with open('election_data_2.csv','r') as csvfile:            #open csv file with voting data
     reader = csv.reader(open('election_data_2.csv'))        #read the file into a way we can manipulate
